@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a i {
   font-size: 12px;
   line-height: 0;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  right: 14px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -563,7 +563,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #2b2320;
+  background: #00A693;
   min-height: 40px;
 }
 
@@ -583,7 +583,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #008F93;
+  color: #fff;
 }
 
 .breadcrumbs ol li + li {
@@ -953,19 +953,19 @@ section {
 .about-us .content .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  margin: 5px 60px 10px 0;
 }
 
 .about-us .content .icon-box i {
   font-size: 48px;
-  float: left;
+  float: right;
   color: #00A693;
 }
 
 .about-us .content .icon-box p {
   font-size: 15px;
   color: #90847f;
-  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .about-us .image {
