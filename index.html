@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="طراحی و ساخت انواع وب سایت (وب اپلیکیشن) با تکنولوژی پایتون-جانگو">
-  <meta name="keywords" content="طراحی وب سایت، وب سایت پایتون، وب سایت جانگو، پایتون، جانگو">
-  <meta name="author" content="حمید رضا بردرانی">
+  
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   
   <title>آرنیکا، شرکت مهندسی نرم افزار</title>
   
@@ -31,10 +30,10 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
       </div>
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@arnika-corp.ir">info@arnika-corp.ir</a></i>
@@ -50,10 +49,63 @@
         <ul>
           <li><a href="index.html" class="active">خانه</a></li>
           <li><a href="about.html">درباره</a></li>
-          <li><a href="services.html">خدمات</a></li>
+
+          <li class="dropdown"><a href="services.html"><span>خدمات</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>وب سایت</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">ایستا</a></li>
+                  <li><a href="#">پویا</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>موبایل</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">اندروید</a></li>
+                  <li><a href="#">iOS</a></li>
+                  <li><a href="#">ویندوز فون</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>دسکتاپ</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">لینوکس</a></li>
+                  <li><a href="#">ویندوز</a></li>
+                  <li><a href="#">مکینتاش</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>ربات وب</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">سرویس وب (API)</a></li>
+                  <li class="dropdown"><a href="#"><span>ربات اجتماعی</span> <i class="bi bi-chevron-left"></i></a>
+                  <ul>
+                    <li><a href="#">تلگرام</a></li>
+                    <li><a href="#">اینستاگرام</a></li>
+                  </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>سرور</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">سامانه نام دامنه (DNS)</a></li>
+                  <li><a href="#">میزبانی وب (Web Hosting)</a></li>
+                  <li><a href="#">انتقال پرونده (FTP)</a></li>
+                  <li><a href="#">پست الکترونیک (E-mail)</a></li>
+                  <li><a href="#">پروکسی (Proxy)</a></li>
+                  <li><a href="#">شبکه خصوصی مجازی (VPN)</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">هوش مصنوعی</a></li>
+            </ul>
+          </li>
+          
           <li><a href="pricing.html">تعرفه</a></li>
-          <li><a href="portfolio.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">نمونه</a></li>
-          <li><a href="blog.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">بلاگ</a></li>
+          <li><a href="portfolio.html">نمونه</a></li>
+          <li><a href="blog.html">بلاگ</a></li>
           <li><a href="contact.html">تماس</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -61,8 +113,7 @@
       <!-- .navbar -->
       
       <div class="logo">
-        <!-- <h1 class="text-light"><a href="index.html">آرنیکا</a></h1> -->
-        <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="static/img/logo.png" alt="آرنیکا" class="img-fluid"></a>
       </div>
     </div>
   </header>
@@ -76,7 +127,7 @@
         <div class="carousel-item active" style="background-image: url(static/img/slide/slide-1.jpg);">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>طراحی وب سایت</span></h2>
+              <h2>طراحی وب سایت</h2>
               <p class="text-justify">طراحی و ساخت انواع وب سایت های (شخصی، خبری، تجاریِ، شرکتی، فروشگاهی، سازمانی و سفارشی) بر اساس نیاز و نوع فعالیت. کد نویسی استاندارد پیش نیاز بهینه سازی موتورهای جستجو (SEO) به منظور داشتن بهترین رتبه ی موتورهای جستجو همچون گوگل، یاهو، بینگ و ...</p>
               <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a></div>
             </div>
@@ -134,7 +185,7 @@
             </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">مشاوره رایگان</a>
+            <a class="cta-btn align-middle" href="contact.html">مشاوره رایگان</a>
           </div>
         </div>
       </div>
@@ -149,42 +200,42 @@
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bi bi-globe"></i></div>
               <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سایت</a></h4>
-              <p class="description">طراحی و ساخت انواع وب سایت، کاملا واکنشگرا جهت نمایش صحیح در طیف گسترده ای از دستگاه</p>
+              <p class="description">طراحی و ساخت انواع وب سایت (وب اپلیکیشن)، کاملا واکنشگرا جهت نمایش صحیح در طیف گسترده ای از دستگاه ها برای استفاده شخصی، تجاری و سازمانی</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-tablet"></i></div>
               <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن موبایل</a></h4>
-              <p class="description">ساخت و توسعه انواع اپلیکیشن های موبایل برای سیستم عامل های مختلف (اندروید، iOS، ویندوز فون)</p>
+              <p class="description">ساخت و توسعه انواع اپلیکیشن های موبایل برای سیستم عامل های مختلف (اندروید، iOS، ویندوز فون) برای استفاده شخصی، تجاری و سازمانی</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-display"></i></div>
               <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن دسکتاپ</a></h4>
-              <p class="description">ساخت و توسعه انواع برنامه های دسکتاپ برای سیستم عامل های مختلف (ویندوز - لینوکس - اپل)</p>
+              <p class="description">ساخت و توسعه انواع برنامه های دسکتاپ برای سیستم عامل های مختلف (ویندوز - لینوکس - اپل) برای استفاده شخصی، تجاری و سازمانی</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class='bx bx-bot'></i></div>
+              <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ربات وب</a></h4>
+              <p class="description">انجام فعالیت های تکراری در وب با سرعتی بسیار بالاتر از آنچه برای انسان امکان پذیر است. مانند ربات تلگرام، اینستاگرام، سرویس های وب (API)</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bi bi-hdd-rack"></i></div>
               <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سرور</a></h4>
-              <p class="description">نصب، پیکربندی و پشتیبانی انواع وب سرورهای لینوکس برای کاربردهای مختلف</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-cpu"></i></div>
-              <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">رباتیک</a></h4>
-              <p class="description">رباتیک، اینرنت اشیا و هوشمند سازی مرتبط با بردهای رزبری پای و آردوینو</p>
+              <p class="description">نصب، پیکربندی و توسعه انواع وب سرورهای لینوکس برای استفاده شخصی و سازمانی و کاربردهای مختلف به منظور ارائه در شبکه محلی و جهانی</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bi bi-shield-check"></i></div>
-              <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">امنیت سایبری</a></h4>
-              <p class="description">پویش، کشف، گزارش و رفع آسیب پذیری های متداول اپلیکیشن های تحت وب</p>
+              <div class="icon"><i class='bx bx-brain'></i></div>
+              <h4 class="title"><a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">هوش مصنوعی</a></h4>
+              <p class="description">واکنش‌هایی مشابه رفتارهای هوشمند انسانی از جمله، درک شرایط پیچیده، شبیه‌سازی فرایندهای تفکری و شیوه‌های استدلالی انسانی و پاسخ موفق به آن‌ها</p>
             </div>
           </div>
         </div>
@@ -195,54 +246,77 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2><strong>تعرفه ها</strong></h2>
+          <p>طرح های پیشنهادی و سفارشی وب سایت</p>
+        </div>
+        
         <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-left">
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
               <h3>پایه</h3>
-              <h4><sup>$</sup>۶<span> / میلیون تومان</span></h4>
+              <h4><sup>$</sup>۵<span> / میلیون تومان</span></h4>
               <ul>
                 <li>گرافیک اختصاصی</li>
                 <li>یک دامنه ir رایگان</li>
-                <li>۱ سال ۱ گیگ هاست رایگان</li>
-                <li class="">۶ ماه پشتیبانی رایگان</li>
-                <li class="na">درگاه پرداخت</li>
+                <li>یک سال ۱ گیگ میزبانی رایگان</li>
+                <li>۶ ماه پشتیبانی رایگان</li>
+                <li class="na">درگاه پرداخت الکترونیک</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
+                <a href="#" class="btn-buy" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
               </div>
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
               <h3>تجاری</h3>
-              <h4><sup>$</sup>۱۲<span> / میلیون تومان</span></h4>
+              <h4><sup>$</sup>۹<span> / میلیون تومان</span></h4>
               <ul>
                 <li>گرافیک اختصاصی</li>
                 <li>یک دامنه com رایگان</li>
-                <li>۱ سال ۲ گیگ هاست رایگان</li>
+                <li>یک سال ۲ گیگ میزبانی رایگان</li>
                 <li>۸ ماه پشتیبانی رایگان</li>
-                <li class="na">درگاه پرداخت</li>
+                <li class="na">درگاه پرداخت الکترونیک</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
+                <a href="#" class="btn-buy" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
               </div>
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-right">
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
               <h3>فروشگاهی</h3>
-              <h4><sup>$</sup>۳۷<span> / میلیون تومان</span></h4>
+              <h4><sup>$</sup>۱۸<span> / میلیون تومان</span></h4>
               <ul>
                 <li>گرافیک اختصاصی</li>
                 <li>یک دامنه ir و com رایگان</li>
-                <li>۱ سال ۳ گیگ هاست رایگان</li>
+                <li>یک سال ۳ گیگ میزبانی رایگان</li>
                 <li>۱۲ ماه پشتیبانی رایگان</li>
-                <li>درگاه پرداخت</li>
+                <li>درگاه پرداخت الکترونیک</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
+                <a href="#" class="btn-buy" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span class="advanced">تعاملی</span>
+              <h3>سفارشی</h3>
+              <h4><sup>$</sup>۰<span> / میلیون تومان</span></h4>
+              <ul>
+                <li>گرافیک اختصاصی</li>
+                <li>دامنه سفارشی</li>
+                <li>فضای میزبانی سفارشی</li>
+                <li>پشتیبانی سفارشی</li>
+                <li>درگاه پرداخت الکترونیک</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#staticBackdrop">جزئیات</a>
               </div>
             </div>
           </div>
@@ -251,12 +325,12 @@
     </section>
     <!-- End Pricing Section -->
     
-    <!-- ======= Our Clients Section ======= -->
+    <!-- ======= Technology ======= -->
     <section id="clients" class="clients">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2><strong>فناوری</strong></h2>
-          <p>ما در بخش تحقیق و توسعه همیشه در حال شناسایی، استفاده و به روز رسانی بهترین و جدیدترین فناوری های شناخته شده روز دنیا و بهره گیری از آنها برای ارائه بهترین محصولات و خدمات هستیم. همیشه در تلاشیم تا با کیفیت ترین محصولات نرم افزاری را تولید و بهترین خدمات را ارائه دهیم. ما همیشه در حال توسعه هستیم.</p>
+          <p>ما در بخش تحقیق و توسعه همیشه در حال شناسایی، استفاده و به روز رسانی بهترین و جدیدترین فناوری های شناخته شده روز دنیا و بهره گیری از آنها برای ارائه بهترین محصولات و خدمات هستیم. همیشه در تلاشیم تا با کیفیت ترین محصولات نرم افزاری را تولید و بهترین خدمات را ارائه دهیم.</p>
         </div>
         
         <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
@@ -310,13 +384,13 @@
         </div>
       </div>
     </section>
-    <!-- End Our Clients Section -->
+    <!-- End Technology -->
     
     <!-- ======= Our Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>ارتباط مستقیم <strong></strong></h2>
+          <h2><strong>ارتباط مستقیم</strong></h2>
           <p>
             به منظور حفظ تعامل هر چه بیشتر و جلب اعتماد و رضایت شما صاحبین محترم کسب و کارهای آنلاین ما به صورت مستقیم برای مشاوره یا پاسخ به سوالات شما عزیزان در خدمتیم.
             امیدواریم ما هم در توسعه تجارت شما نقشی هر چند کوچک ایفا کنیم.
@@ -329,10 +403,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-1.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -347,10 +421,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-2.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -365,10 +439,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-3.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -383,10 +457,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-4.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -424,8 +498,8 @@
               <li><i class="bx bx-chevron-left"></i> <a href="about.html">درباره ما</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="services.html">خدمات</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="pricing.html">تعرفه</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="portfolio.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">نمونه</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="blog.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">بلاگ</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="portfolio.html">نمونه</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="blog.html">بلاگ</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="contact.html">تماس با ما</a></li>
             </ul>
           </div>
@@ -436,9 +510,9 @@
               <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سایت</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن موبایل</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن دسکتاپ</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ربات وب</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سرور</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">رباتیک</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">امنیت سایبری</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">هوش مصنوعی</a></li>
             </ul>
           </div>
           
@@ -456,15 +530,14 @@
     <div class="container d-md-flex py-4">
       <div class="me-md-auto text-center text-md-start">
         <div class="credits">
-          <a href="index.html">آرنیکا</a>، شرکت مهندسی نرم افزار
+          <a href="https://arnika-corp.ir/">آرنیکا</a>، شرکت مهندسی نرم افزار
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer>

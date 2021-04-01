@@ -26,15 +26,14 @@
   <link href="static/css/style.css" rel="stylesheet">
 </head>
 <body>
-  
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
       </div>
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@arnika-corp.ir">info@arnika-corp.ir</a></i>
@@ -50,10 +49,63 @@
         <ul>
           <li><a href="index.html">خانه</a></li>
           <li><a href="about.html" class="active">درباره</a></li>
-          <li><a href="services.html">خدمات</a></li>
+
+          <li class="dropdown"><a href="services.html"><span>خدمات</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>وب سایت</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">ایستا</a></li>
+                  <li><a href="#">پویا</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>موبایل</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">اندروید</a></li>
+                  <li><a href="#">iOS</a></li>
+                  <li><a href="#">ویندوز فون</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>دسکتاپ</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">لینوکس</a></li>
+                  <li><a href="#">ویندوز</a></li>
+                  <li><a href="#">مکینتاش</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>ربات وب</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">سرویس وب (API)</a></li>
+                  <li class="dropdown"><a href="#"><span>ربات اجتماعی</span> <i class="bi bi-chevron-left"></i></a>
+                  <ul>
+                    <li><a href="#">تلگرام</a></li>
+                    <li><a href="#">اینستاگرام</a></li>
+                  </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a href="#"><span>سرور</span> <i class="bi bi-chevron-left"></i></a>
+                <ul>
+                  <li><a href="#">سامانه نام دامنه (DNS)</a></li>
+                  <li><a href="#">میزبانی وب (Web Hosting)</a></li>
+                  <li><a href="#">انتقال پرونده (FTP)</a></li>
+                  <li><a href="#">پست الکترونیک (E-mail)</a></li>
+                  <li><a href="#">پروکسی (Proxy)</a></li>
+                  <li><a href="#">شبکه خصوصی مجازی (VPN)</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">هوش مصنوعی</a></li>
+            </ul>
+          </li>
+          
           <li><a href="pricing.html">تعرفه</a></li>
-          <li><a href="portfolio.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">نمونه</a></li>
-          <li><a href="blog.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">بلاگ</a></li>
+          <li><a href="portfolio.html">نمونه</a></li>
+          <li><a href="blog.html">بلاگ</a></li>
           <li><a href="contact.html">تماس</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -61,8 +113,7 @@
       <!-- .navbar -->
       
       <div class="logo">
-        <!-- <h1 class="text-light"><a href="index.html">آرنیکا</a></h1> -->
-        <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="static/img/logo.png" alt="آرنیکا" class="img-fluid"></a>
       </div>
     </div>
   </header>
@@ -111,7 +162,7 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-refresh"></i>
                   <h4>بروز رسانی</h4>
-                  <p class="text-justify">در صورت بروز هر گونه خطای احتمالی در هر زمانی به صورت رایگان رفع و بروز رسانی می شود.</p>
+                  <p class="text-justify">در صورت بروز هر گونه خطای احتمالی در هر زمانی به صورت رایگان رفع و بروز رسانی می کنیم.</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-shield"></i>
@@ -145,10 +196,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-1.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -163,10 +214,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-2.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -181,10 +232,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-3.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -199,10 +250,10 @@
               <div class="member-img">
                 <img src="static/img/team/team-4.png" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+                  <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -240,8 +291,8 @@
               <li><i class="bx bx-chevron-left"></i> <a href="about.html">درباره ما</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="services.html">خدمات</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="pricing.html">تعرفه</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="portfolio.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">نمونه</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="blog.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">بلاگ</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="portfolio.html">نمونه</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="blog.html">بلاگ</a></li>
               <li><i class="bx bx-chevron-left"></i> <a href="contact.html">تماس با ما</a></li>
             </ul>
           </div>
@@ -249,12 +300,12 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>خدمات ما</h4>
             <ul>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سایت</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن موبایل</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن دسکتاپ</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سرور</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">رباتیک</a></li>
-              <li><i class="bx bx-chevron-left"></i> <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">امنیت سایبری</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سایت</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن موبایل</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اپلیکیشن دسکتاپ</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ربات وب</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">وب سرور</a></li>
+              <li><i class="bx bx-chevron-left"></i> <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">هوش مصنوعی</a></li>
             </ul>
           </div>
           
@@ -272,15 +323,14 @@
     <div class="container d-md-flex py-4">
       <div class="me-md-auto text-center text-md-start">
         <div class="credits">
-          <a href="index.html">آرنیکا</a>، شرکت مهندسی نرم افزار
+          <a href="https://arnika-corp.ir/">آرنیکا</a>، شرکت مهندسی نرم افزار
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="facebook" title="فیسبوک"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="whatsapp" title="واتساپ"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#" class="telegram" title="تلگرام"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="instagram" title="اینستاگرام"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer>
